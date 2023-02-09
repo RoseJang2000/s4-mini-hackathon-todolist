@@ -1,0 +1,66 @@
+// Color
+$brown: #2b2520;
+$green: #39dbc2;
+$pink: #f41fbf;
+$yellow: #ffed28;
+$purple: #b028ff;
+$blue: #49a7ff;
+$red: #ff3838;
+$orange: #db7953;
+
+// Size
+$extra-large: 45px;
+$large: 2rem;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.title_text {
+  position: relative;
+  $stroke-width: $extra-large * 0.05;
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+  font-size: $extra-large;
+  color: lighten($pink, 25%);
+  -webkit-text-stroke-width: $stroke-width;
+  -webkit-text-stroke-color: lighten($pink, 5%);
+  text-shadow: 0 0 30px lighten($pink, 5%), 0 0 30px lighten($pink, 5%), 0 0 30px lighten($pink, 5%);
+  &:after {
+    z-index: -1;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke-width: $stroke-width;
+    -webkit-text-stroke-color: darken($pink, 40%);
+    top: -5%;
+    left: -0.5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title_text {
+    position: relative;
+    $stroke-width: $large * 0.05;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    font-size: $large;
+    color: lighten($pink, 25%);
+    -webkit-text-stroke-width: $stroke-width;
+    -webkit-text-stroke-color: lighten($pink, 5%);
+    text-shadow: 0 0 30px lighten($pink, 5%), 0 0 30px lighten($pink, 5%),
+      0 0 30px lighten($pink, 5%);
+    &:after {
+      z-index: -1;
+      position: absolute;
+      color: transparent;
+      -webkit-text-stroke-width: $stroke-width;
+      -webkit-text-stroke-color: darken($pink, 40%);
+      top: -5%;
+      left: -0.5%;
+    }
+  }
+}

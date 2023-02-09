@@ -1,0 +1,10 @@
+{
+  "todos": [
+    {
+      "id": 0,
+      "text": "Please add a task",
+      "isChecked": false,
+      "isEdit": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.title_container {
+  width: 28rem;
+  height: 7rem;
+  /* margin-bottom: 1rem; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .title_container {
+    /* background-color: aqua; */
+    width: 28rem;
+    height: 5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+  }
+}

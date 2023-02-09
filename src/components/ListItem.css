@@ -1,0 +1,59 @@
+.todo_list {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.todo_checked, .todo_unchecked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ff17c1;
+    border: 1px solid #ff52d1;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+.todo_text, .todo_text_checked {
+    color: #fff;
+    flex: 1;
+    border-bottom: 1px solid #484040;
+    padding: 10px 0px;
+    padding-left: 8px;
+}
+
+.todo_text_checked {
+    text-decoration: line-through;
+    color: #6f3460;
+}
+
+.todo_delete, .todo_edit {
+    cursor: pointer;
+    color: #ff17c1;
+    padding: 0px 4px;
+    margin-left: 3px;
+}
+
+.todo_unchecked {
+    background-color: transparent;
+}
+
+.edit_input {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    border-bottom: 1px solid #ff52d1;
+    padding: 10px 0px;
+    padding-left: 8px;
+    font-size: 1rem;
+    color: #ff52d1;
+}
+
+.edit_input:focus-visible {
+    outline: none;
+}

@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #181824;
+  overflow: hidden;
+}
+
+.App_todo {
+  height: 35rem;
+  width: 28rem;
+}
+
+.App_input_wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #25273c;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.App_input {
+  flex: 1;
+  outline: none;
+  border: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.App_input_button {
+  width: 3rem;
+  height: 100%;
+  background-color: #f706b6;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.App_todo_list {
+  background-color: #25273c;
+  height: 90%;
+  margin-top: 2rem;
+  overflow: auto;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.empty {
+  color: transparent;
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #181824;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App_todo {
+    height: 60%;
+    width: 90%;
+  }
+
+  .App_input_wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    background-color: #25273c;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .App_input {
+    outline: none;
+    border: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .App_input_button {
+    width: 2.5rem;
+    height: 100%;
+    background-color: #f706b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .App_todo_list {
+    background-color: #25273c;
+    height: 90%;
+    margin-top: 1.5rem;
+    overflow: auto;
+    border-radius: 15px;
+  }
+
+  .empty {
+    color: transparent;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ddd;
   }
 }
