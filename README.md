@@ -15,7 +15,6 @@ cd data
 json-server --watch data.json --port 3001
 ```
 ```bash
-cd client
 npm install
 npm run start
 ```
